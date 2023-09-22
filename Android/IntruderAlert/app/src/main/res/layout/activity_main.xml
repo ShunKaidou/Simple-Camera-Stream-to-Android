@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/wallpapers"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/urledit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_edittext"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INTRUDER ALERT"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:clickable="true"
+                />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+
+                android:hint="username"
+                android:padding="8dp"
+                android:textColor="@color/purple"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/purple"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+
+            <Button
+                android:id="@+id/loginbutton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/purple"
+                android:text="Login"
+                android:textSize="18dp"
+                app:cornerRadius="15dp"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
